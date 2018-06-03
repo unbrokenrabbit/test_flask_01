@@ -8,6 +8,6 @@ app = Flask(__name__)
 @app.route('/')
 def hello_world():
     version = str( sys.version_info[ 0 ] ) + '.' + str( sys.version_info[ 1 ] )
-    #return 'python version:', version, 'WTF'
-    return 'WTF'
+    return 'asdf python version: ' +  version
+    #return 'darve' + 'WTF'
 

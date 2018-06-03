@@ -1,0 +1,9 @@
+version: '2'
+services:
+  web:
+    build: .
+    volumes:
+     - .:/opt/test_flask_01
+    network_mode: "host"
+    ports:
+     - "5000:5000"
