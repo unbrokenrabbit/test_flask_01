@@ -11,6 +11,10 @@ RUN mkdir -p /opt/test_flask_01
 COPY app.py /opt/test_flask_01/
 WORKDIR /opt/test_flask_01
 ENV FLASK_APP=app.py
+#ENV LC_ALL=en_US.utf-8
+#ENV LANG=en_US.utf-8
+ENV LC_ALL=C.UTF-8
+ENV LANG=C.UTF-8
 
 #CMD python3 app.py
 CMD flask run
