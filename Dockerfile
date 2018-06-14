@@ -5,6 +5,7 @@ RUN apt-get update
 RUN apt-get install -y python3
 RUN apt-get install -y python3-pip
 RUN pip3 install Flask
+RUN pip3 install flask-wtf
 
 RUN mkdir -p /opt/test_flask_01
 #COPY app.py /opt/test_flask_01/

@@ -1,0 +1,22 @@
+{% extends "navigation.html" %}
+
+{% block content %}
+    <h1>Import is a work in progress.  Back off.</h1>
+    <table>
+        <tr>
+            <th>date</th>
+            <th>description</th>
+            <th>amount</th>
+        </tr>
+    {% for transaction in transactions %}
+        <tr>
+            <td>{{ transaction.date }}</td>
+            <td>{{ transaction.description }}</td>
+            <td>{{ transaction.amount }} </td>
+        </tr>
+    <!--
+    <div><p>{{ transaction.date }},<b>{{ transaction.description }}</b></p></div>
+    -->
+    {% endfor %}
+    </table>
+{% endblock %}
